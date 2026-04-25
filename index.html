@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna University Study Portal | Regulation 2021</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo" onclick="showView('dashboard')">
+                <span>📚 AU Arrear Portal</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Dashboard View -->
+        <div id="dashboard" class="view">
+            <div class="view-header">
+                <h1>Target: <span class="accent-text">All Clear</span></h1>
+                <p>Select a subject to access the complete question database.</p>
+            </div>
+            <div class="subject-grid" id="subject-grid">
+                <!-- Subject cards will be injected here -->
+            </div>
+        </div>
+
+        <!-- Subject Detail View -->
+        <div id="subject-detail" class="view hidden">
+            <button class="back-btn" onclick="showView('dashboard')">← Back to Subjects</button>
+            <div id="detail-content">
+                <!-- Detailed question list will be injected here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Data Scripts -->
+    <script src="data.js"></script>
+    <script src="ph3151_questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
