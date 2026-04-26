@@ -1,154 +1,154 @@
 const ph3151_data = {
   base_concepts: [
-    { title: "Center of Mass", image: "center_of_mass_cosmic_1777134490308.png", description: "The balance point of a system." },
-    { title: "Gyroscopes", image: "gyroscope_hoverbike_1777134523711.png", description: "Stability through rotation." },
-    { title: "Quantum Tunneling", image: "quantum_tunneling_1777137970759.png", description: "Particles passing through barriers." },
-    { title: "Maxwell's Equations", image: "maxwell_equations_visual_1777135821053.png", description: "The laws of electromagnetism." }
+    { title: "Center of Mass", image: "assets/PH3151/center_of_mass_cosmic_1777134490308.png", description: "The balance point of a system." },
+    { title: "Gyroscopes", image: "assets/PH3151/gyroscope_hoverbike_1777134523711.png", description: "Stability through rotation." },
+    { title: "Quantum Tunneling", image: "assets/PH3151/quantum_tunneling_1777137970759.png", description: "Particles passing through barriers." },
+    { title: "Maxwell's Equations", image: "assets/PH3151/maxwell_equations_visual_1777135821053.png", description: "The laws of electromagnetism." }
   ],
   part_a: [
     {
       question: "Define quantum tunneling. (4x Repeated: 2024, 23ND, 23AM, 22ND)",
       au_answer: "Quantum tunneling is a quantum mechanical phenomenon where a particle passes through a potential barrier that it could not surmount according to classical mechanics. It occurs because the wave function $\\psi$ of the particle has a finite value within and on the other side of the barrier.",
       easy_explanation: "Like a ghost walking through a wall. In the quantum world, particles have a small chance of appearing on the other side of a solid barrier even if they don't have enough energy to jump over it.",
-      image: "quantum_tunneling_1777137970759.png"
+      image: "assets/PH3151/quantum_tunneling_1777137970759.png"
     },
     {
       question: "What is meant by harmonic oscillator? (3x Repeated: 2024, 23ND, 22ND)",
       au_answer: "A system that, when displaced from equilibrium, experiences a restoring force proportional to the displacement $F = -kx$. The potential energy is given by $V = \\frac{1}{2}kx^2$.",
       easy_explanation: "A classic example is a weight on a spring bouncing up and down. It always tries to return to the middle with a force that gets stronger the further you pull it.",
-      image: "harmonic_oscillator_1777137986485.png"
+      image: "assets/PH3151/harmonic_oscillator_1777137986485.png"
     },
     {
       question: "State Doppler effect. (2x Repeated: 2024, 23ND)",
       au_answer: "The change in frequency or wavelength of a wave in relation to an observer who is moving relative to the wave source. Apparent frequency $n' = n \\left( \\frac{v \\pm v_o}{v \\mp v_s} \\right)$.",
       easy_explanation: "The high-to-low pitch change of an ambulance siren as it passes you. The sound waves get squashed as it approaches and stretched as it leaves.",
-      image: "doppler_effect_1777138002786.png"
+      image: "assets/PH3151/doppler_effect_1777138002786.png"
     },
     {
       question: "Define torque. (3x Repeated: 2024, 23ND, 23AM)",
       au_answer: "Torque is the rotational equivalent of linear force. It is defined as the cross product of the position vector and the force vector: $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$. Magnitude $\\tau = rF\\sin\\theta$.",
       easy_explanation: "The 'twist' you apply to a wrench to turn a bolt. It depends on how hard you push and how long the wrench is.",
-      image: "torque_concept_1777138019292.png"
+      image: "assets/PH3151/torque_concept_1777138019292.png"
     },
     {
       question: "State Compton effect. (3x Repeated: 2024, 23ND, 23AM)",
       au_answer: "The increase in wavelength of X-rays or other energetic electromagnetic radiations when they are scattered by electrons. The shift in wavelength is $\\Delta\\lambda = \\frac{h}{m_0c}(1 - \\cos\\theta)$.",
       easy_explanation: "When light hits an electron, it 'loses' energy and changes color (wavelength), like a billiard ball losing speed and changing direction after hitting another ball.",
-      image: "compton_effect_1777138204069.png"
+      image: "assets/PH3151/compton_effect_1777138204069.png"
     },
     {
       question: "What are matter waves? (3x Repeated: 23AM, 22ND, 2024)",
       au_answer: "Waves associated with moving particles of matter, also known as de Broglie waves. The wavelength is given by $\\lambda = \\frac{h}{p} = \\frac{h}{mv}$.",
       easy_explanation: "Everything moving, even you, has a wave attached to it. For tiny things like electrons, this wave behavior is very easy to see and very important.",
-      image: "matter_waves_1777138221760.png"
+      image: "assets/PH3151/matter_waves_1777138221760.png"
     },
     {
       question: "Differentiate between laser and ordinary light. (3x Repeated: 2024, 23ND, 22ND)",
       au_answer: "Laser light is coherent, monochromatic, highly directional, and intense. Ordinary light is incoherent, polychromatic, divergent, and less intense.",
       easy_explanation: "A laser is like a perfectly synchronized army marching in one line; a bulb is like a crowd of people walking in all directions at different speeds.",
-      image: "laser_vs_light_1777138238375.png"
+      image: "assets/PH3151/laser_vs_light_1777138238375.png"
     },
     {
       question: "What is polarization? (2x Repeated: 2024, 22ND)",
       au_answer: "The process of restricting the vibrations of light or other electromagnetic radiation to a single plane perpendicular to the direction of propagation.",
       easy_explanation: "Filtering light so it only vibrates in one direction, like vertical blinds only letting thin vertical objects through.",
-      image: "polarization_1777138252800.png"
+      image: "assets/PH3151/polarization_1777138252800.png"
     },
     {
       question: "Define total internal reflection. (2022ND)",
       au_answer: "The complete reflection of a ray of light within a medium from the surrounding surfaces back into the medium. It occurs when light travels from denser to rarer medium and the angle of incidence $i >$ critical angle $c$.",
       easy_explanation: "When light hits the surface of water from below at a very sharp angle and bounces back down like it hit a mirror instead of going out into the air.",
-      image: "total_internal_reflection_1777138388724.png"
+      image: "assets/PH3151/total_internal_reflection_1777138388724.png"
     },
     {
       question: "What is a torsional pendulum? (2x Repeated: 2024, 22ND)",
       au_answer: "A heavy disc suspended by a wire which oscillates by twisting and untwisting the wire. The time period is $T = 2\\pi\\sqrt{\\frac{I}{C}}$, where $I$ is moment of inertia and $C$ is torsional rigidity.",
       easy_explanation: "A heavy object hanging from a wire that spins back and forth when you twist it, like a tire swing twisting around its rope.",
-      image: "torsional_pendulum_1777138405499.png"
+      image: "assets/PH3151/torsional_pendulum_1777138405499.png"
     },
     {
       question: "Define Center of Mass. (2x Repeated: 2023AM, 22ND)",
       au_answer: "The point in a system at which the entire mass of the system may be considered to be concentrated for describing its motion: $\\vec{R}_{cm} = \\frac{\\sum m_i\\vec{r}_i}{\\sum m_i}$.",
       easy_explanation: "The 'perfect balance point' of an object. If you push exactly at this point, the object moves straight without spinning.",
-      image: "center_of_mass_cosmic_1777134490308.png"
+      image: "assets/PH3151/center_of_mass_cosmic_1777134490308.png"
     },
     {
       question: "State the principle of resonant diode. (2x Repeated: 2023AM, 22ND)",
       au_answer: "It works on the principle of resonant tunneling, where electron transmission through a double potential barrier is significantly enhanced when the incident energy matches the quantized energy level within the well.",
       easy_explanation: "A quantum gate that only lets electrons through when their energy 'key' perfectly matches the 'lock' of the gate.",
-      image: "bloch_function_diagram_1777194471966.png"
+      image: "assets/PH3151/bloch_function_diagram_1777194471966.png"
     },
     {
       question: "Write the general electromagnetic wave equation in terms of magnetic field vector in free space. (2024AM)",
       au_answer: "The wave equation for magnetic field $\\vec{B}$ is $\\nabla^2\\vec{B} = \\mu_0\\epsilon_0 \\frac{\\partial^2\\vec{B}}{\\partial t^2}$ or $\\nabla^2\\vec{B} = \\frac{1}{c^2} \\frac{\\partial^2\\vec{B}}{\\partial t^2}$.",
       easy_explanation: "A formula that describes how magnetic ripples travel through empty space at the speed of light.",
-      image: "maxwell_equations_visual_1777135821053.png"
+      image: "assets/PH3151/maxwell_equations_visual_1777135821053.png"
     },
     {
       question: "What are Eigen values and Eigen function? (2024AM)",
       au_answer: "When an operator $\\hat{A}$ acts on a function $\\psi$ and results in the same function multiplied by a constant $a$ ($\\hat{A}\\psi = a\\psi$), then $a$ is the Eigen value and $\\psi$ is the Eigen function.",
       easy_explanation: "In quantum math, some operations don't change the shape of a wave, just its size. The shape is the Eigen function, and the multiplier is the Eigen value.",
-      image: "schrodinger_wave_concept_1777135330100.png"
+      image: "assets/PH3151/schrodinger_wave_concept_1777135330100.png"
     },
     {
       question: "Why does quantum tunnelling occur? (2024AM)",
       au_answer: "It occurs because particles behave like waves. The wave function $\\psi$ does not drop to zero immediately at a potential barrier but decays exponentially, allowing a finite probability of finding the particle on the other side.",
       easy_explanation: "Because small particles are 'fuzzy' like waves, they can leak through narrow walls even if they shouldn't be able to climb over them.",
-      image: "quantum_tunneling_1777137970759.png"
+      image: "assets/PH3151/quantum_tunneling_1777137970759.png"
     },
     {
       question: "What is meant by nonlinear oscillations? (2023ND)",
       au_answer: "Oscillations where the restoring force is not directly proportional to the displacement (e.g., $F = -kx - bx^2$). The superposition principle does not apply.",
       easy_explanation: "A messy vibration where the 'spring' doesn't follow simple rules—it might get much stiffer the more you pull it.",
-      image: "harmonic_oscillator_1777137986485.png"
+      image: "assets/PH3151/harmonic_oscillator_1777137986485.png"
     },
     {
       question: "What is meant by radiation pressure? (2x Repeated: 2023ND, 23AM)",
       au_answer: "The pressure exerted by electromagnetic radiation upon any surface it exposes. For a perfectly reflecting surface, $P = \\frac{2I}{c}$, and for a perfectly absorbing surface, $P = \\frac{I}{c}$.",
       easy_explanation: "Light actually pushes on things! It's a tiny force, but in space, it's enough to move large solar sails.",
-      image: "maxwell_equations_visual_1777135821053.png"
+      image: "assets/PH3151/maxwell_equations_visual_1777135821053.png"
     },
     {
       question: "What is normalization of wave function? (2023ND)",
       au_answer: "The process of adjusting the wave function so that the total probability of finding the particle in all space is exactly 1: $\\int_{-\\infty}^{\\infty} |\\psi|^2 d\\tau = 1$.",
       easy_explanation: "A math step to make sure the chance of a particle being *somewhere* is 100%.",
-      image: "schrodinger_wave_concept_1777135330100.png"
+      image: "assets/PH3151/schrodinger_wave_concept_1777135330100.png"
     },
     {
       question: "Differentiate travelling and standing wave with respect to energy. (2023AM)",
       au_answer: "In a travelling wave, energy is transported from one region to another. In a standing wave, energy is confined within the nodes and is not transported.",
       easy_explanation: "A travelling wave is like a package being delivered; a standing wave is like a person running on a treadmill—lots of energy, but staying in one spot.",
-      image: "doppler_effect_1777138002786.png"
+      image: "assets/PH3151/doppler_effect_1777138002786.png"
     },
     {
       question: "Identify any two properties of laser useful for communication. (2023AM)",
       au_answer: "1. High Directionality (allows long-distance transmission with low loss). 2. High Bandwidth/Monochromaticity (allows high-speed data encoding).",
       easy_explanation: "Lasers stay in a tight beam for miles and can carry huge amounts of internet data through fiber optic cables.",
-      image: "laser_vs_light_1777138238375.png"
+      image: "assets/PH3151/laser_vs_light_1777138238375.png"
     },
     {
       question: "State law of conservation of angular momentum. (2022ND)",
       au_answer: "If the external torque acting on a system is zero, the total angular momentum of the system remains constant ($\\vec{L} = I\\vec{\\omega} = \\text{constant}$).",
       easy_explanation: "Spinning things keep spinning unless something twists them. An ice skater spins faster when they pull their arms in because of this.",
-      image: "gyroscope_hoverbike_1777134523711.png"
+      image: "assets/PH3151/gyroscope_hoverbike_1777134523711.png"
     },
     {
       question: "What is the physical significance of a wave function? (2022ND)",
       au_answer: "The wave function $\\psi$ itself has no physical meaning, but its square $|\\psi|^2$ represents the probability density of finding a particle at a given point in space and time.",
       easy_explanation: "$\\psi$ is the 'recipe' for a particle; $|\\psi|^2$ tells you the 'hotspots' where the particle is most likely to be found.",
-      image: "schrodinger_wave_concept_1777135330100.png"
+      image: "assets/PH3151/schrodinger_wave_concept_1777135330100.png"
     },
     {
       question: "Give the expression for Bloch function. (2023AM)",
       au_answer: "$\\psi(r) = u(r) e^{i\\mathbf{k} \\cdot \\mathbf{r}}$, where $u(r)$ has the periodicity of the crystal lattice.",
       easy_explanation: "A wave that describes an electron moving through a repeating grid of atoms (a crystal).",
-      image: "bloch_function_diagram_1777194471966.png"
+      image: "assets/PH3151/bloch_function_diagram_1777194471966.png"
     },
     {
       question: "What is quantum harmonic oscillator? (2022ND)",
       au_answer: "The quantum mechanical analog of the classical harmonic oscillator. Its energy levels are quantized as $E_n = (n + \\frac{1}{2})\\hbar\\omega$, where $n = 0, 1, 2...$",
       easy_explanation: "A tiny quantum spring. Unlike a big spring, it can only vibrate at specific energy 'steps' and never truly stops moving (Zero Point Energy).",
-      image: "harmonic_oscillator_1777137986485.png"
+      image: "assets/PH3151/harmonic_oscillator_1777137986485.png"
     }
   ],
   part_b: [
@@ -206,7 +206,7 @@ const ph3151_data = {
 <h3>Conclusion</h3>
 <p>Schrodinger's equation replaced the Bohr model by treating electrons as waves rather than particles in fixed orbits, revolutionizing our understanding of the microscopic world.</p>`,
       easy_explanation: "<strong>Think of it as:</strong> The master GPS for an electron. It doesn't tell you exactly where the electron is, but it tells you exactly where the electron 'ripples' are strongest and how they change over time.",
-      image: "schrodinger_wave_concept_1777135330100.png",
+      image: "assets/PH3151/schrodinger_wave_concept_1777135330100.png",
       marks: 16
     },
     {
@@ -249,12 +249,13 @@ const ph3151_data = {
   <li>Wireless communication (Radio, TV, Wi-Fi).</li>
   <li>Design of antennas and waveguides.</li>
   <li>Electric motors, generators, and transformers.</li>
+  <li>Remote sensing and medical imaging (MRI).</li>
 </ul>
 
 <h3>Conclusion</h3>
 <p>Maxwell unified electricity, magnetism, and light into one consistent theory, predicting that light itself is an electromagnetic wave.</p>`,
       easy_explanation: "<strong>Think of it as:</strong> The four rules of the universe's 'Force'. They explain why a magnet sticks to a fridge, why your phone charges, and how signals travel through the air.",
-      image: "maxwell_equations_visual_1777135821053.png",
+      image: "assets/PH3151/maxwell_equations_visual_1777135821053.png",
       marks: 16
     },
     {
@@ -305,7 +306,7 @@ const ph3151_data = {
 <h3>Conclusion</h3>
 <p>Due to its high power output, the $CO_2$ laser remains the gold standard for industrial heavy-duty material processing.</p>`,
       easy_explanation: "<strong>Think of it as:</strong> A super-powerful invisible heat beam. It works by making gas molecules 'dance' (vibrate) really fast until they shoot out a beam of pure heat energy.",
-      image: "co2_laser_diagram_1777135870727.png",
+      image: "assets/PH3151/co2_laser_diagram_1777135870727.png",
       marks: 16
     },
     {
@@ -343,7 +344,7 @@ const ph3151_data = {
 <h3>Conclusion</h3>
 <p>STM opened the door to Nanotechnology by allowing us to see and touch individual atoms for the first time.</p>`,
       easy_explanation: "<strong>Think of it as:</strong> A finger so sensitive it can feel the 'bumps' of individual atoms. It doesn't actually 'see' with light; it 'feels' with a tiny quantum electric current.",
-      image: "scanning_tunneling_microscope_1777138424581.png",
+      image: "assets/PH3151/scanning_tunneling_microscope_1777138424581.png",
       marks: 16
     }
   ],
@@ -396,7 +397,7 @@ const ph3151_data = {
 <h3>Conclusion</h3>
 <p>The Kronig-Penney model proves that the periodic nature of crystals naturally leads to the splitting of energy levels into bands, which dictates all electrical properties of matter.</p>`,
       easy_explanation: "<strong>Think of it as:</strong> A highway for electrons. In some materials, the highway is smooth (Conductors); in others, there are huge 'forbidden' gaps where electrons simply cannot exist (Insulators).",
-      image: "kronig_penney_model_diagram_1777194543288.png"
+      image: "assets/PH3151/kronig_penney_model_diagram_1777194543288.png"
     },
     {
       title: "Compton Scattering & Energy Transfer (Problem & Theory)",
@@ -433,7 +434,7 @@ const ph3151_data = {
 <h3>Conclusion</h3>
 <p>Compton scattering proves that photons carry momentum and behave like particles in collisions, a key tenet of Quantum Theory.</p>`,
       easy_explanation: "<strong>Think of it as:</strong> Atomic billiards. Light hits an electron like a cue ball hitting another ball. The light 'loses speed' (changes color) and the electron 'gets pushed' (recoils).",
-      image: "compton_scattering_diagram_1777194588479.png"
+      image: "assets/PH3151/compton_scattering_diagram_1777194588479.png"
     }
   ]
 };
