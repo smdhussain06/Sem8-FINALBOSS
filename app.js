@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     renderDashboard();
+    renderMath();
 });
 
 function renderDashboard() {
@@ -18,6 +19,7 @@ function renderDashboard() {
         card.onclick = () => showSubjectDetail(subject);
         grid.appendChild(card);
     });
+    renderMath();
 }
 
 function showSubjectDetail(subject) {
@@ -43,6 +45,7 @@ function showSubjectDetail(subject) {
         <p style="text-align:center; padding: 2rem;">Full question database for this subject is being populated.</p>
     `;
     window.scrollTo(0, 0);
+    renderMath();
 }
 
 function renderPH3151Questions(subject) {
@@ -76,31 +79,42 @@ function renderPH3151Questions(subject) {
         </div>
     `;
     window.scrollTo(0, 0);
+    renderMath();
 }
 
 function renderQuestionCard(q, part, num) {
-    const frequencyText = q.question.includes('Repeated') ? q.question.match(/\((.*?)\)/)[1] : 'Appeared once';
-    const mainQuestion = q.question.split('(')[0].trim();
+    if (!q || !q.question) return '';
+    
+    let frequencyText = 'Appeared once';
+    let mainQuestion = q.question;
+
+    if (q.question.includes('(')) {
+        const matches = q.question.match(/\((.*?)\)/);
+        if (matches && matches[1]) {
+            frequencyText = matches[1];
+        }
+        mainQuestion = q.question.split('(')[0].trim();
+    }
 
     return `
         <div class="question-card">
             <div class="question-header">
-                <div class="question-text">
-                    <span class="q-number">#${part}${num}</span>
-                    <div>${part === 'A' ? '' : ''} ${mainQuestion}</div>
+                <div class="q-header-top">
+                    <span class="q-number">QUESTION #${part}${num}</span>
+                    <span class="frequency-tag">${frequencyText}</span>
                 </div>
-                <span class="frequency-tag">${frequencyText}</span>
+                <div class="question-title-text">${mainQuestion}</div>
             </div>
             <div class="question-body">
-                ${q.image ? `<img src="${q.image}" alt="Concept Diagram" class="question-image">` : ''}
+                ${q.image ? `<img src="${q.image}" alt="Educational Diagram" class="question-image">` : ''}
                 
                 <div class="answer-section">
-                    <span class="answer-label">AU Exam Format Answer</span>
+                    <span class="answer-label">Official AU Framework Answer</span>
                     <div class="au-answer">${q.au_answer}</div>
                 </div>
 
                 <div class="answer-section">
-                    <span class="answer-label">Simple Learning Concept</span>
+                    <span class="answer-label">Concept Mastery</span>
                     <div class="easy-explain">${q.easy_explanation}</div>
                 </div>
             </div>
@@ -115,6 +129,19 @@ function showView(viewId) {
         renderDashboard();
     }
     window.scrollTo(0, 0);
+    renderMath();
+}
+
+function renderMath() {
+    if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+            ],
+            throwOnError: false
+        });
+    }
 }
 
 window.showView = showView;
